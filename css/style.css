@@ -1,0 +1,562 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+html, body {
+    height: 100%;
+    overflow-x: hidden; 
+    overflow-y: auto;   
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Body de la página de inicio */
+.CabeceraSesion{
+    background-color: #f5f5f5;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logoSesion{
+    max-width: 50px;
+    height: auto;
+}
+
+.FotoProductos {
+    text-align: center;
+}
+
+.FotoProductos img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.FotoProductos img:hover {
+    transform: scale(1.1);
+}
+
+.navegadorpaginas ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navegadorpaginas ul li a {
+    color: #333; 
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block; 
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navegadorpaginas ul li a:hover {
+    color: #645caf;;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #f5f5f5;
+    color: #888;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .redes {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .redes li a {
+    color: #3a26a0;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s,transform 0.3s;
+}
+
+footer .redes li a:hover {
+    color: #645caf;
+    transform: scale(1.1);
+}
+    
+/*Pagina productos*/
+.CabeceraProducto {
+    background-color: #f5f5f5;
+    color: #000000;
+    padding: 20px;
+    display: flex;             
+    justify-content: center;
+}
+
+.logoCabecera {
+    max-width: 100px;              
+    height: auto;              
+}
+
+.maindelosproductos {
+    padding: 40px 20px;
+}
+
+.productos{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.producto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    width: 250px;
+}
+
+.productos .producto:hover{
+    transform: scale(1.1);
+}
+
+.producto img {
+ width: 100%;
+ height: auto; 
+ object-fit: initial;
+ margin-bottom: 15px;
+ border-radius: 5px;
+}
+
+.producto p {
+    margin-bottom: 10px;
+}
+
+/* Detalles */
+.Cabecera {
+    background-color: #f5f5f5;
+    color: #000000;
+    padding: 20px;
+    display: flex;             
+    align-content: flex-start;
+}
+
+.producto-detalle-container {
+    display: flex; 
+    gap: 40px; 
+    padding: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.imagen-detalle {
+    flex-shrink: 0; 
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.imagen-detalle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.descripcion-detalle {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.descripcion-detalle h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.descripcion-detalle p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.BotonYForms{
+    display: flex;
+    color:#fff;
+    align-items: center;
+    gap: 15px;
+}
+
+.Tallas{
+    padding: 10px;
+    height: auto;
+    min-width: 150px; 
+}
+
+.Cantidad{ 
+    padding: 10px;
+    height: auto;
+    min-width: 150px;
+}
+
+.Detalles {
+    background-color: #4e39c4;
+    color: #fff;
+    border: none;
+    max-width: 500px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Detalles:hover {
+    background-color: #645caf;
+}
+
+/* Son para el registro y el inicio de sesion */
+.CabeceraSesion2{
+    background-color: #f5f5f5;
+    color: #000000;
+    padding: 20px;
+    display: flex;
+}
+
+.logoSesion2{
+    max-width: 100px;
+    height: auto;
+}
+
+.CuerpoSesion{
+    background-color: #f5f5f5;
+    display: flex;
+    align-items:center ;
+}
+
+/* Container Registro e Inicio */
+.InicioSesion-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+.Register-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.contraEmail, .NombreContraEmail{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4e39c4;
+}
+
+.btn-Inicio, .btn-Registro {
+    background-color: #4e39c4;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-Inicio:hover, .btn-Registro:hover {
+    background-color: #3a26a0;
+}
+
+/* Footer styles */
+.FooterSesion, .FooterRegistro {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.FooterSesion a, .FooterRegistro a {
+    color: #4e39c4;
+    text-decoration: none;
+}
+
+/* Conocenos */
+.CabeceraConocenos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+.texto {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.texto h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.texto p {
+    max-width: 800px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.footerConocenos {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.RedesConocenos a {
+    color: #4e39c4;
+}
+
+.contacto{
+    color: #3a26a0;
+}
+
+.SeleccionGenero {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.ComprarBody {
+ font-family: Arial, sans-serif;
+ background-color: #f5f5f5;
+ display: flex;
+ justify-content: center;
+ align-items: flex-start; 
+ min-height: 100vh; 
+ margin: 0;
+ padding: 20px 0; 
+}
+
+.Todo {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.EnvioYPago {
+    margin-bottom: 30px;
+}
+
+.EnvioYPago h3 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.NombreLocalizacionEmailTelPago {
+    margin-bottom: 15px;
+}
+
+.NombreLocalizacionEmailTelPago label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.NombreLocalizacionEmailTelPago input[type="text"],
+.NombreLocalizacionEmailTelPago input[type="email"],
+.NombreLocalizacionEmailTelPago input[type="tel"],
+.NombreLocalizacionEmailTelPago select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.Pago {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.Pago:hover {
+    border-color: #28a745;
+}
+
+.btn-pagar {
+    width: 100%;
+    padding: 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-pagar:hover {
+    background-color: #218838;
+}
+
+/* Tablets y móviles */
+@media (max-width: 768px) {
+    .productos,
+    .producto-detalle-container,
+    .Cabecera,
+    .CabeceraSesion,
+    .CabeceraProducto,
+    .CabeceraConocenos {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Imágenes más pequeñas */
+    img, 
+    .producto img, 
+    .imagen-detalle img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Contenedores más ajustados */
+    .producto,
+    .InicioSesion-container,
+    .Register-container {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    /* Navegador vertical en móvil */
+    .navegadorpaginas ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Texto adaptable */
+    .descripcion-detalle h2 {
+        font-size: 1.5rem;
+    }
+
+    .descripcion-detalle p,
+    .texto p {
+        font-size: 1rem;
+    }
+
+    .Todo {
+     padding: 20px; /* Reducimos el padding de 40px a 20px */
+    }
+}

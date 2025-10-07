@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pago</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class = "ComprarBody">
+    <div class="Todo">
+        <h2>Información de Envío y Pago</h2>
+        
+        <div class="EnvioYPago">
+            <h3>Información de Envío</h3>
+            <form action="#" method="post">
+                <div class="NombreLocalizacionEmailTelPa">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="NombreLocalizacionEmailTelPa">
+                    <label for="calle">Calle y Número</label>
+                    <input type="text" id="calle" name="calle" required>
+                </div>
+                <div class="NombreLocalizacionEmailTelPa">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" id="ciudad" name="ciudad" required>
+                </div>
+                <div class="NombreLocalizacionEmailTelPa">
+                    <label for="cp">Código Postal</label>
+                    <input type="text" id="cp" name="cp" required>
+                </div>
+                <div class="NombreLocalizacionEmailTelPa">
+                    <label for="pais">País</label>
+                    <select id="pais" name="pais" required>
+                        <option value="">Selecciona un país</option>
+                        <option value="es">España</option>
+                        <option value="mx">México</option>
+                        <option value="ar">Argentina</option>
+                        </select>
+                </div>
+                <div class="NombreLocalizacionEmailTelPa">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="NombreLocalizacionEmailTelPa">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+            </form>
+        </div>
+
+        <div class="EnvioYPago">
+            <h3>Método de Pago</h3>
+            <div class="payment-options">
+
+                <div class="payment-option">
+                <input type="radio" id="payment_tarjeta" name="payment_method" value="tarjeta" checked>
+                <label for="payment_tarjeta">Tarjeta de Crédito/Débito</label>
+
+                <div class="card-info">
+                    <div class="NombreLocalizacionEmailTelPago">
+                    <label for="card_number">Número de Tarjeta</label>
+                    <input type="text" id="card_number" name="card_number" placeholder="XXXX XXXX XXXX XXXX">
+                    </div>
+                    <div class="NombreLocalizacionEmailTelPago">
+                    <label for="card_name">Nombre en la Tarjeta</label>
+                    <input type="text" id="card_name" name="card_name">
+                    </div>
+                    <div class="NombreLocalizacionEmailTelPago">
+                    <label for="expiry_date">Fecha de Vencimiento</label>
+                    <input type="text" id="expiry_date" name="expiry_date" placeholder="MM/AA">
+                    </div>
+                    <div class="NombreLocalizacionEmailTelPago">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="XXX">
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+
+        <button type="submit" class="btn-pagar">Pagar</button>
+
+    </div>
+
+</body>
+</html>
